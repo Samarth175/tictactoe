@@ -10,6 +10,7 @@ body{
 
 main{
     text-align: center;
+    padding: 20px;
 }
 
 table{
@@ -18,9 +19,10 @@ table{
 }
 
 table td{
-    min-width: 50px;
-    height: 50px;
+    min-width: 60px;
+    height: 60px;
     text-align: center;
+    font-size: 40px;
     border:2px solid black;
     padding: 5px;
 }

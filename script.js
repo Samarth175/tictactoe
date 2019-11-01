@@ -6,6 +6,8 @@ var overSound = new Audio("./audio/over.wav");
 function itemClicked(item) {
     const playerValue = (currentPlayer) ?"O":"X";
     const itemId = parseInt(item.id);
+
+    //Check whether the clicked position is vacant or not
     if(currentStatus[itemId]==-1){
         item.innerHTML = playerValue;
         currentStatus[itemId] = currentPlayer;
@@ -13,12 +15,16 @@ function itemClicked(item) {
     }else{
         return alert("Invaid Move");
     }
+
+    //Check for winning condition
     if(hasWon()){
         overSound.play();
         alert("Player " + playerValue + " has won the game!");
         resetGame();
         return;
     }
+
+    //Change the player 
     currentPlayer = !currentPlayer;
 }
 
