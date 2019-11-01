@@ -1,7 +1,7 @@
 var currentPlayer = 0;
 var currentStatus = [-1,-1,-1,-1,-1,-1,-1,-1,-1];
-var clickSound = new Audio("/audio/click.wav");
-var overSound = new Audio("/audio/over.wav");
+var clickSound = new Audio("./audio/click.wav");
+var overSound = new Audio("./audio/over.wav");
 
 function itemClicked(item) {
     const playerValue = (currentPlayer) ?"O":"X";
